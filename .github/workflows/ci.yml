@@ -27,10 +27,12 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y chromium-chromedriver
-        sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
-        
+        sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver || true
+
     - name: Fix Jest permissions
       run: chmod +x ./node_modules/.bin/jest
 
     - name: Run unit and automation tests
       run: npm test
+    - name: Ensure Jest is executable
+  run: npx jest --version
