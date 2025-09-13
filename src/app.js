@@ -42,4 +42,10 @@ app.patch("/tasks/:id", (req, res) => {
   res.json(task);  // Return the updated task
 });
 
-module.exports = { app };
+// Reset function for testing
+const _reset = () => {
+  tasks = [];
+  nextId = 1;
+};
+
+module.exports = { app, _reset };
