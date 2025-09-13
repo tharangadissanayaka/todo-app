@@ -1,7 +1,6 @@
 // src/__tests__/task.test.js
 
 const request = require("supertest");
-beforeEach(() => _reset());
 
 const { app } = require("../app");
 
