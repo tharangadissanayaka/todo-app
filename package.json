@@ -16,12 +16,13 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "selenium-webdriver": "^4.35.0"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.27.1",
     "jest": "^30.0.5",
     "nodemon": "^3.1.10",
+    "selenium-webdriver": "^4.35.0",
     "supertest": "^7.1.4"
   }
 }
