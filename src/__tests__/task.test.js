@@ -1,9 +1,9 @@
 // src/__tests__/task.test.js
 
 const request = require("supertest");
-const { app, _reset } = require("../app");
-
 beforeEach(() => _reset());
+
+const { app } = require("../app");
 
 describe("Task API", () => {
   test("POST /tasks creates a task when title is non-empty", async () => {
