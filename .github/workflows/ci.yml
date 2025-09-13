@@ -34,5 +34,6 @@ jobs:
 
     - name: Run unit and automation tests
       run: npm test
+
     - name: Ensure Jest is executable
-  run: npx jest --version
+      run: npx jest --version
